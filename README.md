@@ -4,7 +4,7 @@
 Get a random prompt from Equestria Daily's Newbie Artist Training Grounds.
 A simple javascript for simple people.
 
-Download **"randomprompt.html"** to for a standalone, offline version of the prompt picker.
+Download **"randomprompt.html"** for a standalone, offline version of the prompt picker.
 
 You can use *"randomprompt.js"* in your own projects, it comes with a whooping 2 functions:
 - **getRandomPrompt()** returns a random prompt
