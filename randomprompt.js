@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<!-- the horrifying single file version; avert thyne eyes -->
-<html>
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Random NATG prompt Generator</title>
-    <script>
-      const prompts = [
+const prompts = [
 "Draw a pony standing still/Draw a pony posing",
 "Draw a pony movin'/Draw a pony groovin",
 "Draw a pony in the snow/Draw a pony bundled up",
@@ -154,32 +147,12 @@
 "Draw an exhausted pony / Draw a pony that's run out of juice",
 "Draw a pony or ponies doing as many of our past prompts as possible / Draw a pony mixing things up",
 "Draw a pony graduating / Draw a pony attaining their goal"
-      ];
-    </script>
-    <script>
-      function getRandomPrompt() {
-        return prompts[Math.floor((Math.random() * prompts.length))];
-      };
-      function getTotalPrompts() {
-        return prompts.length;
-      }
-    </script>
-  </head>
-  <body>
-    <h3 id="prompt"></h3>
-    <p id="count"></p>
-    <p> <button onclick="putPrompt()">get a different prompt</button> </p>
-    <script>
-      let prompttag = document.getElementById("prompt");
-      let counttag = document.getElementById("count");
-      document.onload = putPrompt();
-      document.onload = putCount();
-      function putPrompt(){
-        prompttag.innerHTML = getRandomPrompt();
-      }
-      function putCount(){
-        counttag.innerHTML = "There are " + getTotalPrompts() + " total prompts.";
-      }
-    </script>
-  </body>
-</html>
+];
+
+function getRandomPrompt() {
+  return prompts[Math.floor((Math.random() * prompts.length))];
+};
+
+function getTotalPrompts() {
+  return prompts.length;
+}
