@@ -4,11 +4,13 @@
     <meta charset="UTF-8"/>
     <title>Random NATG prompt Generator</title>
     <script src="randomprompt.js"></script>
+    <script src="generateprompt.js"></script>
   </head>
   <body>
     <h3 id="prompt"></h3>
     <p id="count"></p>
     <p> <button onclick="putPrompt()">get a different prompt</button> </p>
+    <p>Experimental <button onclick="generatePrompt()">generate randomized prompt</button> </p>
     <script>
       let prompttag = document.getElementById("prompt");
       let counttag = document.getElementById("count");
@@ -16,6 +18,9 @@
       document.onload = putCount();
       function putPrompt(){
         prompttag.innerHTML = getRandomPrompt();
+      }
+      function generatePrompt(){
+        prompttag.innerHTML = "Draw a " + getGeneratedPrompt();
       }
       function putCount(){
         counttag.innerHTML = "There are " + getTotalPrompts() + " total prompts.";
