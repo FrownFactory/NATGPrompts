@@ -5,7 +5,7 @@ const adjectives = [
   "sneaky",
   "mourning",
   "tiny",
-  "emberassed",
+  "embarrassed",
   "shy",
   "giant",
   "triumphant",
@@ -29,6 +29,8 @@ const adjectives = [
   "puzzled",
   "acrobatic",
   "sad",
+  "scared",
+  "courageous",
   " "
 ];
 
@@ -244,6 +246,23 @@ const verbs = [
 "in pushed perspective",
 "swimming",
 "in the rain",
+"stuck in time",
+"springing to life",
+  "passed out",
+  "chasing their dreams",
+  "enjoying your favourite meal",
+  "having a family moment",
+  "about to lose it",
+  "crushing on another pony",
+  "with a secret admirer",
+  "enjoying your favourite season",
+  "whooping it up in town",
+  "as another species",
+  "experiencing something unexpected",
+  "staring down their worste fear",
+  "hanging on by a thread",
+  "defying impossible odds",
+  "finding their innner courage"
 ];
 
 function getRandomAdjective() {
