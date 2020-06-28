@@ -278,7 +278,22 @@
 "Draw a Pony Enjoying Your Favorite Season / Draw a Pony Whooping It Up In Town",
 "Draw a pony as another species (Draw a MLP species other than an equine) / Draw a pony experiencing something unexpected",
 "Draw a pony staring down their worst fear / Draw a pony hanging on by a thread",
-"Draw a pony defying impossible odds / Draw a pony finding their inner courage"
+"Draw a pony defying impossible odds / Draw a pony finding their inner courage",
+"Draw a pony doing something you like to do (outside drawing) / Draw your OC's special talent",
+"Draw a pony with a wild imagination / Draw a pony lost in thought",
+"Draw a pony with a dark side / Draw a pony that’s bad to the bone",
+"Draw a ponifed fairy tale, nursery rhyme or legend / Draw a pony telling a ghostly story",
+"Draw a ponyfied version of your favorite book, game, ect / Draw a pony sharing their favorite thing with another pony",
+"Draw a pony back from the future / Draw a pony traveling through time",
+"Draw a pony with a sixth sense / Draw a pony encountering the supernatural",
+"Draw a pony in grave danger / Draw a pony about to meet its maker",
+"Draw a pony cheering up a friend / Draw a pony turning a frown upside down",
+"Draw a pony breaking out / Draw a pony escape artist",
+"Draw a pony pushing boundaries / Draw a pony stretching the limit",
+"Draw a pony racing to the finish / Draw a pony running short on time",
+"Draw ponies experiencing your perfect idea for an episode / Draw a pony with a brilliant idea",
+"Draw a pony doing a good deed / Draw a pony being a stand up citizen",
+"Draw a pony going to a foreign land / Draw a pony caught in a tourist trap"
       ];
     </script>
     <script>
@@ -289,11 +304,84 @@
         return prompts.length;
       }
     </script>
+<style>
+#count {
+  font-size: small;
+  color: #e8e9ea;
+  margin-top:5px;
+}
+
+#button_box {
+  width: 500px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  font-size: 1em;
+  margin-top: 5px;
+  border: 2px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+button:hover {
+  background:#28a745;
+}
+
+body {
+  background: #0077bf;
+  color: #f8f9faff;
+}
+
+h3 {
+  font-size: x-large;
+  color: #111111;;
+  background: #ffc107;
+}
+
+footer {
+  font-size:small;
+  color:#eeeeee;
+  margin-top:1px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link {
+  color: #f8f9faff;
+}
+
+a:visited {
+  color: #f8f9faff;
+}
+
+a:hover {
+  color: #ffc107;
+}
+
+a:active {
+  color: #ffc107;
+}
+</style>
   </head>
   <body>
     <h3 id="prompt"></h3>
-    <p id="count"></p>
-    <p> <button onclick="putPrompt()">get a different prompt</button> </p>
+    <div id="button_box">
+      <button onclick="putPrompt()">Get a different prompt</button>
+      <div id="count"></div>
+    </div>
+    <br/>
+    <footer>
+      Prompt Generator by Frown Factory<br>
+      Prompts by <a href="https://www.equestriadaily.com" target="_blank">Equestria Daily</a><br>
+      This site is not associated with or endorsed by Equestria Daily.<br>
+      <a href="https://github.com/FrownFactory/NATGPrompts">Source code</a>
+      <a href="https://frownfactory.github.io/NATGPrompts">Online Version</a>
+    </footer>
     <script>
       let prompttag = document.getElementById("prompt");
       let counttag = document.getElementById("count");

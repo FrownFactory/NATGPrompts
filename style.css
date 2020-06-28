@@ -1,0 +1,61 @@
+.counting {
+  font-size: small;
+  color: #e8e9ea;
+  margin-top:5px;
+}
+
+#button_box {
+  width: 500px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  font-size: 1em;
+  margin-top: 5px;
+  border: 2px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+button:hover {
+  background:#28a745;
+}
+
+body {
+  background: #0077bf;
+  color: #f8f9faff;
+}
+
+h3 {
+  font-size: x-large;
+  color: #111111;;
+  background: #ffc107;
+}
+
+footer {
+  font-size:small;
+  color:#eeeeee;
+  margin-top:1px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link {
+  color: #f8f9faff;
+}
+
+a:visited {
+  color: #f8f9faff;
+}
+
+a:hover {
+  color: #ffc107;
+}
+
+a:active {
+  color: #ffc107;
+}

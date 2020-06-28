@@ -31,6 +31,7 @@ const adjectives = [
   "sad",
   "scared",
   "courageous",
+  "imaginative",
   " "
 ];
 
@@ -248,21 +249,48 @@ const verbs = [
 "in the rain",
 "stuck in time",
 "springing to life",
-  "passed out",
-  "chasing their dreams",
-  "enjoying your favourite meal",
-  "having a family moment",
-  "about to lose it",
-  "crushing on another pony",
-  "with a secret admirer",
-  "enjoying your favourite season",
-  "whooping it up in town",
-  "as another species",
-  "experiencing something unexpected",
-  "staring down their worste fear",
-  "hanging on by a thread",
-  "defying impossible odds",
-  "finding their innner courage"
+"passed out",
+"chasing their dreams",
+"enjoying your favourite meal",
+"having a family moment",
+"about to lose it",
+"crushing on another pony",
+"with a secret admirer",
+"enjoying your favourite season",
+"whooping it up in town",
+"as another species",
+"experiencing something unexpected",
+"staring down their worste fear",
+"hanging on by a thread",
+"defying impossible odds",
+"finding their innner courage",
+  "doing something you like to do (outside of drawing)",
+  "lost in thought",
+  "with a dark side",
+  "that's bad to the bone",
+  "as a fairytale character",
+  "telling a ghostly story",
+  "as a character from your favorite book / game / movie / etc",
+  "sharing their favourite thing with another pony",
+  "from the future",
+  "time-travelling",
+  "with a sixth sense",
+  "encountering the supernatural",
+  "in grave daner",
+  "about to meet its maker",
+  "cheering up a friend",
+  "turning a frown upside down",
+  "breaking out",
+  "pushing boundaries",
+  "stretching the limit",
+  "racing to the finish",
+  "running short on time",
+  "experiencing your perfect idea for an episode",
+  "with a brilliant idea",
+  "doing a good deed",
+  "being a stand up citizen",
+  "going to a foreign land",
+  "caught in a tourist trap"
 ];
 
 function getRandomAdjective() {
@@ -281,3 +309,6 @@ function getGeneratedPrompt() {
   return adj + " pony " + verb;
 };
 
+function getPossiblePrompts() {
+  return adjectives.length * verbs.length;
+};

@@ -271,7 +271,22 @@ const prompts = [
 "Draw a Pony Enjoying Your Favorite Season / Draw a Pony Whooping It Up In Town",
 "Draw a pony as another species (Draw a MLP species other than an equine) / Draw a pony experiencing something unexpected",
 "Draw a pony staring down their worst fear / Draw a pony hanging on by a thread",
-"Draw a pony defying impossible odds / Draw a pony finding their inner courage"
+"Draw a pony defying impossible odds / Draw a pony finding their inner courage",
+"Draw a pony doing something you like to do (outside drawing) / Draw your OC's special talent",
+"Draw a pony with a wild imagination / Draw a pony lost in thought",
+"Draw a pony with a dark side / Draw a pony that’s bad to the bone",
+"Draw a ponifed fairy tale, nursery rhyme or legend / Draw a pony telling a ghostly story",
+"Draw a ponyfied version of your favorite book, game, ect / Draw a pony sharing their favorite thing with another pony",
+"Draw a pony back from the future / Draw a pony traveling through time",
+"Draw a pony with a sixth sense / Draw a pony encountering the supernatural",
+"Draw a pony in grave danger / Draw a pony about to meet its maker",
+"Draw a pony cheering up a friend / Draw a pony turning a frown upside down",
+"Draw a pony breaking out / Draw a pony escape artist",
+"Draw a pony pushing boundaries / Draw a pony stretching the limit",
+"Draw a pony racing to the finish / Draw a pony running short on time",
+"Draw ponies experiencing your perfect idea for an episode / Draw a pony with a brilliant idea",
+"Draw a pony doing a good deed / Draw a pony being a stand up citizen",
+"Draw a pony going to a foreign land / Draw a pony caught in a tourist trap"
 ];
 
 function getRandomPrompt() {

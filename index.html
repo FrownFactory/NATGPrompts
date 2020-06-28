@@ -5,12 +5,23 @@
     <title>Random NATG prompt Generator</title>
     <script src="randomprompt.js"></script>
     <script src="generateprompt.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h3 id="prompt"></h3>
-    <p id="count"></p>
-    <p> <button onclick="putPrompt()">get a different prompt</button> </p>
-    <p>Experimental <button onclick="generatePrompt()">generate randomized prompt</button> </p>
+    <div id="button_box">
+      <button onclick="putPrompt()">Get a different prompt</button>
+      <br/>
+      <button onclick="generatePrompt()">Generate a randomized prompt</button>
+      <div id="count" class="counting"></div>
+    </div>
+    <br/>
+    <footer>
+      Prompt Generator by Frown Factory<br>
+      Prompts by <a href="https://www.equestriadaily.com" target="_blank">Equestria Daily</a><br>
+      This site is not associated with or endorsed by Equestria Daily.<br>
+      <a href="https://github.com/FrownFactory/NATGPrompts">Source code and offline version.</a>
+    </footer>
     <script>
       let prompttag = document.getElementById("prompt");
       let counttag = document.getElementById("count");
@@ -23,7 +34,8 @@
         prompttag.innerHTML = "Draw a " + getGeneratedPrompt();
       }
       function putCount(){
-        counttag.innerHTML = "There are " + getTotalPrompts() + " total prompts.";
+        counttag.innerHTML = "There are " + getTotalPrompts() + " fixed prompts and "
+          + getPossiblePrompts() + " possible generated prompts.";
       }
     </script>
   </body>
