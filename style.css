@@ -1,12 +1,15 @@
+/* mobile devices ca 2004 */
+#button_box {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* general */
 .counting {
   font-size: small;
   color: #e8e9ea;
   margin-top:5px;
-}
-
-#button_box {
-  width: 500px;
-  text-align: center;
 }
 
 button {
@@ -31,6 +34,9 @@ h3 {
   font-size: x-large;
   color: #111111;;
   background: #ffc107;
+  border-radius: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 footer {
@@ -58,4 +64,13 @@ a:hover {
 
 a:active {
   color: #ffc107;
+}
+
+/* desktop (& mobile devices <15 years old) */
+@media only screen and (min-width: 768px) {
+  #button_box {
+    width: 500px;
+    text-align: center;
+    font-size: 1em;
+  }
 }
