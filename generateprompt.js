@@ -290,7 +290,12 @@ const verbs = [
   "doing a good deed",
   "being a stand up citizen",
   "going to a foreign land",
-  "caught in a tourist trap"
+  "caught in a tourist trap",
+  "on an adventure",
+  "on the wild side",
+  "giving the gift of friendship",
+  "learning from a mistake",
+  "jumbling things up"
 ];
 
 function getRandomAdjective() {

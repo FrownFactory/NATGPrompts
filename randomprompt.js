@@ -286,7 +286,11 @@ const prompts = [
 "Draw a pony racing to the finish / Draw a pony running short on time",
 "Draw ponies experiencing your perfect idea for an episode / Draw a pony with a brilliant idea",
 "Draw a pony doing a good deed / Draw a pony being a stand up citizen",
-"Draw a pony going to a foreign land / Draw a pony caught in a tourist trap"
+"Draw a pony going to a foreign land / Draw a pony caught in a tourist trap",
+"Draw a pony on an adventure / Draw a pony on the wild side",
+"Draw a pony giving the gift of friendship / Draw a pony mending fences",
+"Redraw an older picture using what you’ve learned / Draw a pony learning from a mistake",
+"Draw a pony or ponies doing as many of our past prompts as possible / Draw a pony jumbling things up"
 ];
 
 function getRandomPrompt() {
