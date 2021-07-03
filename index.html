@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h3 id="prompt"></h3>
+    <h1 id="prompt"></h1>
     <div id="button_box">
       <button onclick="putPrompt()">Get a different prompt</button>
-      <br/>
       <button onclick="generatePrompt()">Generate a randomized prompt</button>
-      <div id="count" class="counting"></div>
+      <div id="count" class="counting text_small"></div>
     </div>
     <br/>
-    <footer>
+    <footer class="text_small">
       Prompt Generator by Frown Factory<br>
       Prompts by <a href="https://www.equestriadaily.com" target="_blank">Equestria Daily</a><br>
       This site is not associated with or endorsed by Equestria Daily.<br>
-      <a href="https://github.com/FrownFactory/NATGPrompts">Source code and offline version.</a>
+      <a href="https://github.com/FrownFactory/NATGPrompts">Source code 
+      <s>and offline version.</s></a>
     </footer>
     <script>
       let prompttag = document.getElementById("prompt");
